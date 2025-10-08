@@ -7,6 +7,11 @@ Original file is located at
     https://colab.research.google.com/drive/1U-Ggcp0-dasIPT1D-Za35KiZwwRkxzPL
 """
 
+# 🌍 Carbon Emissions Analysis (SDG 13: Climate Action)
+# Author: Irene Ouko
+# Goal: Predict CO₂ emission growth trends using Logistic Regression
+
+# Step 1: Import libraries
 from google.colab import files
 import pandas as pd
 import numpy as np
@@ -15,35 +20,37 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report, confusion_matrix
 
-# Data loading, cleaning & processing
+# Step 2: Load and clean data
 data = pd.read_csv('carbon_emissions.csv')
 data = data.dropna()
 
+# Step 3: Define features (X) and target (y)
 X = data[['year', 'gdp', 'population']]
 y = data['co2_growth_prct']
 y = np.where(y > y.mean(), 1, 0)
 
-# Feature scaling
+# Step 4: Scale features
 from sklearn.preprocessing import StandardScaler
 
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
 
+# Step 5: Train-test split
 X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.3, random_state=42)
 
-# Train the model
+# Step 6: Model training
 model = LogisticRegression(max_iter=200)
 model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 
-# Evaluation
+# Step 7: Evaluation
 from sklearn.metrics import accuracy_score
 
 print("Accuracy:", accuracy_score(y_test, y_pred))
 print("\nClassification Report:\n", classification_report(y_test, y_pred))
 print("Confusion Matrix:\n", confusion_matrix(y_test, y_pred))
 
-# Visualization
+# Step 8: Visualization
 plt.figure(figsize=(8,5))
 plt.scatter(data['year'], data['co2_growth_prct'], color='green')
 plt.title('Carbon Emissions Over Years')
