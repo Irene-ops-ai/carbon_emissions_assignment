@@ -74,15 +74,11 @@ Model prediction outputs
 Evaluation metrics
 
 ### Demo Screenshots
-#### Data Preview
-![Data Preview](Demo/library imports, data loading, data cleaning.png)
 
-#### Model training
-![Model Training](Demo/model training & evaluation.png)
+<img width="648" height="412" alt="library imports, data loading, data cleaning" src="https://github.com/user-attachments/assets/2395c099-a247-4cc5-b8b2-d4b14aa99a5a" />
 
-#### Results
-![Results](Demo/results 1.png)
+<img width="844" height="452" alt="model training   evaluation" src="https://github.com/user-attachments/assets/77493066-781a-41c1-944d-b9ccb7e07dd6" />
 
-![Results](Demo/results 2.png)
+<img width="637" height="435" alt="results 1" src="https://github.com/user-attachments/assets/56473998-6f06-415d-8e3b-4715f92d306b" />
 
-
+<img width="814" height="471" alt="results 2" src="https://github.com/user-attachments/assets/319be2b2-39d5-48e3-bea7-0ce9e8814619" />
