@@ -55,7 +55,6 @@ Model Training: Train a Linear Regression model using Scikit-learn.
 
 Evaluation: Test accuracy (0.56) and visualize predictions.
 
-Deployment (optional): Build a Streamlit app for user input and prediction.
 
 ## Ethical & Sustainability Considerations
 Ensuring data fairness to avoid regional bias.
