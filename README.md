@@ -72,3 +72,17 @@ Data visualization (CO₂ trends)
 Model prediction outputs
 
 Evaluation metrics
+
+### Demo Screenshots
+#### Data Preview
+![Data Preview](Demo/library imports, data loading, data cleaning.png)
+
+#### Model training
+![Model Training](Demo/model training & evaluation.png)
+
+#### Results
+![Results](Demo/results 1.png)
+
+![Results](Demo/results 2.png)
+
+
